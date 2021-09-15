@@ -30,9 +30,8 @@ Submition requirements for review:
 
 
 Below is an example screenshot of the application:
-![COVID Dashboard Hero Screenshot](./assets/images/)
-![COVID Dashboard Home Page Content](./assets/images/)
-![COVID Dashboard Newsletter Page](./assets/images/)
+![ChefsWay](./images/HomePage.png)
+
 
 
 
