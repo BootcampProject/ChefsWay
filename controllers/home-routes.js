@@ -5,16 +5,16 @@ const withAuth = require ('../utils/auth');
 
 router.get('/', (req, res) => {
     console.log('======================');
-    Post.findAll({
+    Recipie.findAll({
       include: [ User
       ]
     })
-      .then(dbPost => {
-        const posts = dbPost.map(post => post.get({ plain: true }));
-        console.log(dbPost);
+      .then(dbRecipie => {
+        const recipies = dbRecipie.map(recipie => recipie.get({ plain: true }));
+        console.log(dbComment);
   
         res.render('homepage', {
-          posts,
+          recipies,
           loggedIn: req.session.loggedIn
         });
       })
@@ -33,10 +33,10 @@ router.get('/', (req, res) => {
     res.render('login');
   });
 
-  router.get("/new-post", (req, res) => {
+  router.get("/new-recipie", (req, res) => {
     
   
-    res.render("new-post");
+    res.render("new-recipie");
   });
   
   module.exports = router;
