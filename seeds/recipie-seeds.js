@@ -138,6 +138,6 @@ const recipiedata = [
     },
 ]
 
-const seedRecipie = () => Post.bulkCreate(recipiedata);
+const seedRecipie = () => Recipie.bulkCreate(recipiedata);
 
 module.exports = seedRecipie;

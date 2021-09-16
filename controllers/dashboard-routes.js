@@ -20,7 +20,7 @@ router.get('/', withAuth, (req, res) => {
 });
 
 router.get('/post/:id', withAuth, (req, res) => {
-  Post.findByPk(req.params.id, {include: [User, {
+  Recipie.findByPk(req.params.id, {include: [User, {
     model: Comment,
     include: [User]
   }]})
@@ -45,7 +45,7 @@ router.get('/post/:id', withAuth, (req, res) => {
 
 
 router.get('/edit/:id', withAuth, (req, res) => {
-  Post.findByPk(req.params.id, {
+  Recipie.findByPk(req.params.id, {
   })
     .then(dbRecipie => {
       if (dbRecipie) {

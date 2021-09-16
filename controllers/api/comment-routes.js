@@ -20,7 +20,7 @@ router.post('/', withAuth, (req, res) => {
     post_id: req.body.post_id
   })
     .then(dbComment => {
-      console.log(dbComment + "HI THere");
+      console.log(dbComment + "Comment on a Recipie");
       res.json(dbComment)
     
     })

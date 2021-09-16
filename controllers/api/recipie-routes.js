@@ -5,7 +5,7 @@ const withAuth = require ('../../utils/auth');
 
 
 router.post('/', withAuth, (req, res) => {
-  Post.create({
+  Recipie.create({
     title: req.body.title,
     description: req.body.description,
     ingredients: req.body.ingredients,
@@ -22,7 +22,7 @@ router.post('/', withAuth, (req, res) => {
 
 
 router.put('/:id', withAuth, (req, res) => {
-  Post.update(
+  Recipie.update(
     {
       title: req.body.title
     },
@@ -46,7 +46,7 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 router.delete('/:id', withAuth, (req, res) => {
-  Post.destroy({
+  Recipie.destroy({
     where: {
       id: req.params.id
     }
