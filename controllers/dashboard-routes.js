@@ -28,7 +28,7 @@ router.get('/post/:id', withAuth, (req, res) => {
       if (dbRecipie) {
         const recipie = dbRecipie.get({ plain: true });
         console.log(recipie , "<=====================");
-        res.render('single-recipie', {
+        res.render('single-recipies', {
           recipie,
           loggedIn: true
         });
@@ -51,7 +51,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       if (dbRecipie) {
         const recipie = dbRecipie.get({ plain: true });
         
-        res.render('edit-recipie', {
+        res.render('edit-recipies', {
           recipie,
           loggedIn: true
         });
@@ -64,8 +64,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
-router.get("/add-recipie", withAuth, (req, res) => {
-  res.render("add-recipie", {
+router.get("/add-recipies", withAuth, (req, res) => {
+  res.render("add-recipies", {
     layout: "dashboard"
   });
 });

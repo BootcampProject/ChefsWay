@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
       ]
     })
       .then(dbRecipie => {
-        const recipies = dbRecipie.map(recipie => recipie.get({ plain: true }));
+        const recipies = dbRecipie.map(recipies => recipies.get({ plain: true }));
         console.log(dbRecipie);
   
         res.render('homepage', {
@@ -33,10 +33,10 @@ router.get('/', (req, res) => {
     res.render('login');
   });
 
-  router.get("/new-recipie", (req, res) => {
+  router.get("/new-recipies", (req, res) => {
     
   
-    res.render("new-recipie");
+    res.render("new-recipies");
   });
   
   module.exports = router;
