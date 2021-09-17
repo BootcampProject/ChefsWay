@@ -2,13 +2,19 @@ async function newFormHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('input[name="Title"]').value;
-    const txt = document.querySelector('textarea[name="Body"]').value;
+    const description = document.querySelector('textarea[name="Body"]').value;
+    const ingredients = document.querySelector('textarea[name="Body"]').value;
+    const table_meals = document.querySelector('textarea[name="Body"]').value;
+    const directions = document.querySelector('textarea[name="Body"]').value;
   
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/recipies`, {
       method: 'POST',
       body: JSON.stringify({
         title,
-        txt
+        description,
+        ingredients, 
+        table_meals,
+        directions
       }),
       headers: {
         'Content-Type': 'application/json'

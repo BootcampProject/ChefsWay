@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     })
       .then(dbRecipie => {
         const recipies = dbRecipie.map(recipie => recipie.get({ plain: true }));
-        console.log(dbComment);
+        console.log(dbRecipie);
   
         res.render('homepage', {
           recipies,

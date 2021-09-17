@@ -5,7 +5,7 @@ const recipieRoutes = require('./recipie-routes');
 const commentRoutes = require('./comment-routes');
 
 router.use('/users', userRoutes);
-router.use('/recipie', recipieRoutes);
+router.use('/recipies', recipieRoutes);
 router.use('/comments', commentRoutes);
 
 module.exports = router;

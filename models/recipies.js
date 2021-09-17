@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Recipie extends Model { }
+class Recipie extends Model {}
 
 Recipie.init(
   {
@@ -16,19 +16,19 @@ Recipie.init(
       allowNull: false
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     ingredients: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     table_meals: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     directions: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     comment_id: {
@@ -40,13 +40,13 @@ Recipie.init(
         model: 'user',
         key: 'id'
       }
-  }
-},
+    }
+  },
     {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'recipies'
+    modelName: 'recipie'
   }
 );
 
