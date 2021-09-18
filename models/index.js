@@ -14,8 +14,8 @@ Recipie.hasMany(Comment, {
     foreignKey: "post_id",
 })
 
-User.hasMany(Recipie, {
-    foreignKey: "user_id",
-})
+// User.hasMany(Recipie, {
+//     foreignKey: "user_id",
+// })
 
 module.exports = { User, Recipie, Comment };

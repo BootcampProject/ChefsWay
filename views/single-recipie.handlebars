@@ -1,8 +1,13 @@
-{{> post-info post}}
+{{> recipie-info recipie}}
 
-<h2>{{post.title}}</h2>
+<h2>{{recipie.title}}</h2>
 <div>
-    Posted by {{post.user.username}} on {{format_date post.createdAt}} Comments: {{post.txt}}
+    Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}} Comments: {{recipie.description}}
+    
+</div>
+
+<div>
+  {{recipie.ingredients}}, {{recipie.table_meals}}, {{recipie.directions}}
 </div>
 
 {{#if loggedIn}}
@@ -12,7 +17,7 @@
     </div>
     <div>
         {{!-- <div>{{body}}</div> --}}
-        <p>{{post.user.username}}, {{format_date post.createdAt}}</p>
+        <p>{{recipie.user.username}}, {{format_date recipie.createdAt}}</p>
     </div>
 
     <div>
@@ -20,14 +25,14 @@
     </div>
     {{!-- <button type="submit" class="btn">Submit</button> --}}
 </form>
-{{#if post.comments}}
+{{#if recipie.comments}}
     <section class="card">
       <div class="card-header">
         <h3>Comments</h3>
       </div>
 
       <div class="card-body">
-        {{#each post.comments}}
+        {{#each recipie.comments}}
           <div>
             <p>
               {{comment_text}}
@@ -42,7 +47,7 @@
   {{/if}}
 {{/if}}
 
-{{> comments post.comment_text}}
+{{> comments recipie.comment_text}}
 
 {{#if loggedIn}}
 <script src="/public/javascript/comment.js"></script>
