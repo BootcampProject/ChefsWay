@@ -33,6 +33,13 @@
 }
 
 @media screen and (max-width: 980px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.8rem;
+    }
     .welcome-title {
         font-size: 1.2rem;
     }
@@ -48,6 +55,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.2rem;
+    }
     .welcome-title {
         font-size: 1rem;
     }
@@ -63,6 +77,13 @@
 }
 
 @media screen and (max-width: 600px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.6rem;
+    }
     .welcome-title {
         font-size: 0.8rem;
     }
@@ -75,6 +96,10 @@
 }
 
 @media screen and (max-width: 575px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
     .welcome-box {
         margin-top: 50px;
         width: 60rem;
@@ -111,6 +136,9 @@
     #ChefsWay-logo {
         content:url("../images/ChefsWay_Icon.png");
         width: 60px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.6rem;
     }
     .welcome-box {
         margin-top: 50px;
