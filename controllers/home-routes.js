@@ -4,7 +4,6 @@ const { Recipie, User, Comment} = require('../models');
 const withAuth = require ('../utils/auth');
 
 router.get('/', (req, res) => {
-    console.log('======================');
     Recipie.findAll({
       include: [ User
       ]
@@ -19,7 +18,6 @@ router.get('/', (req, res) => {
         });
       })
       .catch(err => {
-        console.log(err);
         res.status(500).json(err);
       });
   });

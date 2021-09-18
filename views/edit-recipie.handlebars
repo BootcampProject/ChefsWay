@@ -1,20 +1,34 @@
-<div class="post card">
-    <div class="card-header">
-        <h2>Edit The Post</h2>
+{{> recipie-info recipie}}
+
+<h2>{{recipie.title}}</h2>
+<div>
+    Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}} <br><br> Comments: <textarea name="Description" id="" cols="90" rows="10">{{recipie.description}} </textarea>
+    
+</div>
+
+<div>
+  <br><br> <textarea name="Ingredients" id="" cols="90" rows="10">{{recipie.ingredients}}</textarea>  
+  <br><br> <textarea name="TableMeals" id="" cols="90" rows="10">{{recipie.table_meals}} </textarea>
+  <br><br> <textarea name="Directions" id="" cols="90" rows="10">{{recipie.directions}} </textarea>
+</div>
+
+<div class="recipie card">
+    {{!-- <div class="card-header">
+        <h2>Edit The Recipie</h2>
     </div>
     <form id="edit-form" class="card-body">
-        <input name="post-id" value="{{post.id}}" />
+        <input name="recipie-id" value="{{post.id}}" />
 
-        <label for="post-title">Title</label>
+        <label for="recipie-title">Title</label>
         <input type="text" name="Title" value="{{post.title}}" class="form-input" />
 
         <label>Comments and Info</label>
-        <textarea name="Body">{{post.body}}</textarea>
-
+        <textarea name="Body">{{post.body}}</textarea> --}}
+<form id="edit-form" class="card-body">
         <button type="submit" class="btn">Update</button>
 
         <button type="button" id="delete-btn" class="btn">Delete</button>
     </form>
 </div>
 
-<script src="../public/javascript/edit-recipie.js"></script>
+<script src="/javascript/edit-recipie.js"></script>

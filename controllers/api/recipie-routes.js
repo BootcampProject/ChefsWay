@@ -15,7 +15,6 @@ router.post('/', withAuth, (req, res) => {
   })
     .then(dbRecipie => res.json(dbRecipie))
     .catch(err => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
@@ -24,8 +23,12 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
   Recipie.update(
     {
-      title: req.body.title
-    },
+      description: req.body.description,
+      ingredients: req.body.ingredients,
+      table_meals: req.body.table_meals,
+      directions: req.body.directions,
+    }
+    ,
     {
       where: {
         id: req.params.id
