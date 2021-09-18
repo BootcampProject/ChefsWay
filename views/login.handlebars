@@ -1,33 +1,187 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Login-Signup Page</title>
+</head>
 
-<script src="/javascript/login.js"></script>
+<body>
+    <div class="container-wrap background">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/"><img id="ChefsWay-logo" src="../images/Homepage_Logo_extended_icon.png" alt="ChefsWay Home Button" width="270"></a>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav left-nav-bar">
+                        <li class="uk-active"><a href="/dashboard">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Image & Welcome Message -->
+        <div class="uk-inline uk-margin uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center hero-image">
+            <div data-uk-grid="{gutter: 20}" class="uk-grid ">
+                <div class="uk-width-1">
+                    <div class="uk-grid uk-flex-center uk-text-left">
+                        <form class="login-form uk-overlay uk-overlay-default">
+                            <div class="uk-card uk-card-hover uk-card-body uk-width-1@m">
+                                <h3 class="uk-card-title">Login to see the goodies!</h3>
+                                <div>
+                                <label for="email-login">Email:</label>
+                                <br>
+                                <input type="text" id="email" />
+                                </div>
+                
+                                <div>
+                                <label for="password-login">Password:</label>
+                                <br>
+                                <input type="password" id="password" />
+                                </div>
+                
+                                <div>
+                                <br>
+                                <button class="uk-button uk-button-secondary" type="submit">Login</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form class="signup-form uk-overlay uk-overlay-default">
+                           <div class="uk-card uk-card-hover uk-card-body uk-width-1@m">
+                                <h3 class="uk-card-title">Sign-up to access the goodies!</h3>
+                                <div>
+                                    <label for="username-signup">Username:</label>
+                                    <br>
+                                    <input type="text" id="username" />
+                                </div>
+                                <div>
+                                    <label for="email-signup">Email:</label>
+                                    <br>
+                                    <input type="text" id="email-signup" />
+                                </div>
+                                <div>
+                                    <label for="password-signup">Password:</label>
+                                    <br>
+                                    <input type="password" id="password-signup" />
+                                </div>
+                                <div>
+                                    <br>
+                                    <button class="uk-button uk-button-secondary" type="submit">Signup</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    
+
+        <div data-uk-grid="{gutter: 20}" class="uk-grid recipe-grid">
+            <div class="uk-width-1">
+                <div class="uk-grid uk-flex-center uk-text-center">
+                    <div class="uk-width-1-3@m card">
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <a href="/login">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/veal_parmesan.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Mom's Veal Parmesan</h3>
+                            </a>
+                                <p>As a kid I loved going to Italian restaurants and eating Veal Parmesan, but more times then not it was over loaded with cheese and not as tasty as one would think.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-width-1-4@m card">
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <a href="/login">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/ChickenPotPie.jpg" alt="Shepard's Pie">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Sheppard’s Pie</h3>
+                            </a>
+                                </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="uk-width-1-4@m card">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-left">
+                            <h3 class="uk-card-title">ChefsWay's Hits</h3>
+                            <p><a href="/login">1. Apple Wild Rice Stuffed Chicken Breast</a></p>
+                            <p><a href="/login">2. Homemade Tuna Salad</a></p>
+                            <p><a href="/login">3. Lamb T-Bones</a></p>
+                            <p><a href="/login">4. Chicken Meatballs</a></p>
+                            <p><a href="/login">5. Salt and Vinegar Chip Fish Sticks</a></p>
+                        </div>
+                    </div>  
+                    
+                    <div class="uk-width-1-4@m card">
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <a href="/login">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/fish-tacos.jpg" alt="Tilapia Fish Tacos">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Tilapia Fish Tacos</h3>
+                            </a>
+                                </div>
+                        </div>
+                    </div>  
+
+                    <div class="uk-width-1-4@m card">
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <a href="/login">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/chicken-paella.jpg" alt="Chicken Paella">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Chicken Paella</h3>
+                            </a>
+                                </div>
+                        </div>
+                    </div> 
+
+                    <div class="uk-width-1-3@m card">
+                        <div class="uk-card uk-card-default uk-card-hover">
+                            <a href="/login">
+                                <div class="uk-card-media-top">
+                                    <img src="../images/pinaple-chicken.jpg" alt="Balsamic Pineapple Chicken Skewers">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Balsamic Pineapple Chicken Skewers</h3>
+                            </a>
+                                <p>Grilled pineapple in the summer time is one of the best things to do with fruit.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#"><img id="ChefsWay-logo" src="../images/ChefsWay_Icon.png" alt="ChefsWay Home Button" width="100"></a>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav left-nav-bar">
+                        <li class="uk-active"><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="../public/javascript/login.js"></script>
+</body>
+
+</html>
+

@@ -19,7 +19,6 @@
     padding-bottom: 20px;
 }
 
-
 /* CONTACT US & NEWSLETTER ELEMENTS*/
 .contactUs {
     margin: 40px 10px 30px 10px;
@@ -34,11 +33,21 @@
 }
 
 @media screen and (max-width: 980px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.8rem;
+    }
     .welcome-title {
         font-size: 1.2rem;
     }
     .welcome-message {
         font-size: 0.9rem;
+    }
+    .login-title, .signup-title {
+        font-size: 0.85rem;
     }
     .contactUs, .newsletter {
         margin: 30px;
@@ -46,10 +55,20 @@
 }
 
 @media screen and (max-width: 768px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.2rem;
+    }
     .welcome-title {
         font-size: 1rem;
     }
     .welcome-message {
+        font-size: 0.85rem;
+    }
+    .login-title, .signup-title {
         font-size: 0.85rem;
     }
     .contactUs, .newsletter {
@@ -58,15 +77,29 @@
 }
 
 @media screen and (max-width: 600px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.6rem;
+    }
     .welcome-title {
         font-size: 0.8rem;
     }
     .welcome-message {
         font-size: 0.7rem;
     }
+    .login-title, .signup-title {
+        font-size: 0.85rem;
+    }
 }
 
 @media screen and (max-width: 575px) {
+    #ChefsWay-logo {
+        content:url("../images/ChefsWay_Icon.png");
+        width: 70px;
+    }
     .welcome-box {
         margin-top: 50px;
         width: 60rem;
@@ -76,6 +109,9 @@
     }
     .welcome-message {
         font-size: 0.7rem;
+    }
+    .login-title, .signup-title {
+        font-size: 0.8rem;
     }
 }
 
@@ -100,6 +136,9 @@
     #ChefsWay-logo {
         content:url("../images/ChefsWay_Icon.png");
         width: 60px;
+    }
+    .all-recipes, .my-recipes, .dashboard, .logout {
+        font-size: 0.6rem;
     }
     .welcome-box {
         margin-top: 50px;

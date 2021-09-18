@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="style.css"/>
-    <title>Landing Page</title>
+    <title>Login-Signup Page</title>
 </head>
 
 <body>
@@ -18,8 +18,6 @@
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav left-nav-bar">
                         <li class="uk-active"><a href="/dashboard">Dashboard</a></li>
-                        <li class="uk-active"><a href="/login"><img src="../images/Signin.png" alt="Login" width="20">Login</a></li>
-                        <li class="uk-active"><a href="/login">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,22 +25,66 @@
 
         <!-- Hero Image & Welcome Message -->
         <div class="uk-inline uk-margin uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center hero-image">
-            <img src="../images/Hero-Landing.jpg" alt="Welcome to ChefsWay" uk-cover>
-            <div class="uk-width-1-2 uk-position-medium uk-position-center-left uk-overlay uk-overlay-default welcome-box">
-                <h3 class="uk-title welcome-title">Thanksgiving is just around the corner!</h3>
-                    <p class="welcome-message">Looking to make something for the family? Look no further!
-                        We have everything from starters to mains to desserts!
-                        Just sign-up or login to see what everyone's been sharing. Don't
-                        forget to share your own 'secret recipes'. </p>
+            <div data-uk-grid="{gutter: 20}" class="uk-grid ">
+                <div class="uk-width-1">
+                    <div class="uk-grid uk-flex-center uk-text-left">
+                        <form class="login-form uk-overlay uk-overlay-default">
+                            <div class="uk-card uk-card-hover uk-card-body uk-width-1@m">
+                                <h3 class="uk-card-title login-title">Login to see the goodies!</h3>
+                                <div>
+                                    <label for="email-login">Email:</label>
+                                    <br>
+                                    <input type="text" id="email" />
+                                </div>
+                
+                                <div>
+                                    <label for="password-login">Password:</label>
+                                    <br>
+                                    <input type="password" id="password" />
+                                </div>
+                
+                                <div>
+                                    <br>
+                                    <button class="uk-button uk-button-secondary" type="submit">Login</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form class="signup-form uk-overlay uk-overlay-default">
+                           <div class="uk-card uk-card-hover uk-card-body uk-width-1@m">
+                                <h3 class="uk-card-title signup-title">Sign-up to access the goodies!</h3>
+                                <div>
+                                    <label for="username-signup">Username:</label>
+                                    <br>
+                                    <input type="text" id="username" />
+                                </div>
+                                <div>
+                                    <label for="email-signup">Email:</label>
+                                    <br>
+                                    <input type="text" id="email-signup" />
+                                </div>
+                                <div>
+                                    <label for="password-signup">Password:</label>
+                                    <br>
+                                    <input type="password" id="password-signup" />
+                                </div>
+                                <div>
+                                    <br>
+                                    <button class="uk-button uk-button-secondary" type="submit">Signup</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
             </div>
         </div>
+    
 
         <div data-uk-grid="{gutter: 20}" class="uk-grid recipe-grid">
             <div class="uk-width-1">
                 <div class="uk-grid uk-flex-center uk-text-center">
                     <div class="uk-width-1-3@m card">
                         <div class="uk-card uk-card-default uk-card-hover">
-                            <a href="#">
+                            <a href="/login">
                                 <div class="uk-card-media-top">
                                     <img src="../images/veal_parmesan.jpg" alt="">
                                 </div>
@@ -57,7 +99,7 @@
 
                     <div class="uk-width-1-4@m card">
                         <div class="uk-card uk-card-default uk-card-hover">
-                            <a href="#">
+                            <a href="/login">
                                 <div class="uk-card-media-top">
                                     <img src="../images/ChickenPotPie.jpg" alt="Shepard's Pie">
                                 </div>
@@ -72,17 +114,17 @@
                     <div class="uk-width-1-4@m card">
                         <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-left">
                             <h3 class="uk-card-title">ChefsWay's Hits</h3>
-                            <p><a href="#">1. Apple Wild Rice Stuffed Chicken Breast</a></p>
-                            <p><a href="#">2. Homemade Tuna Salad</a></p>
-                            <p><a href="#">3. Lamb T-Bones</a></p>
-                            <p><a href="#">4. Chicken Meatballs</a></p>
-                            <p><a href="#">5. Salt and Vinegar Chip Fish Sticks</a></p>
+                            <p><a href="/login">1. Apple Wild Rice Stuffed Chicken Breast</a></p>
+                            <p><a href="/login">2. Homemade Tuna Salad</a></p>
+                            <p><a href="/login">3. Lamb T-Bones</a></p>
+                            <p><a href="/login">4. Chicken Meatballs</a></p>
+                            <p><a href="/login">5. Salt and Vinegar Chip Fish Sticks</a></p>
                         </div>
                     </div>  
                     
                     <div class="uk-width-1-4@m card">
                         <div class="uk-card uk-card-default uk-card-hover">
-                            <a href="#">
+                            <a href="/login">
                                 <div class="uk-card-media-top">
                                     <img src="../images/fish-tacos.jpg" alt="Tilapia Fish Tacos">
                                 </div>
@@ -95,7 +137,7 @@
 
                     <div class="uk-width-1-4@m card">
                         <div class="uk-card uk-card-default uk-card-hover">
-                            <a href="#">
+                            <a href="/login">
                                 <div class="uk-card-media-top">
                                     <img src="../images/chicken-paella.jpg" alt="Chicken Paella">
                                 </div>
@@ -108,7 +150,7 @@
 
                     <div class="uk-width-1-3@m card">
                         <div class="uk-card uk-card-default uk-card-hover">
-                            <a href="#">
+                            <a href="/login">
                                 <div class="uk-card-media-top">
                                     <img src="../images/pinaple-chicken.jpg" alt="Balsamic Pineapple Chicken Skewers">
                                 </div>
@@ -122,37 +164,9 @@
                 </div>
             </div>
         </div>
-
-        <hr class="uk-divider-icon">
-
-        <div data-uk-grid="{gutter: 20}" class="uk-grid recipe-grid">
-            <div class="uk-width-1">
-                <div class="uk-grid uk-flex-center uk-text-left">
-                    <div class="uk-width-1-3@m contactUs">
-                        <h4>Contact Us</h4>
-                        <h6 class="uk-margin uk-width-1-2@s">Email: chefsway@aol.com</h6>
-                        <h6 class="uk-margin uk-width-1-2@s">Office: 1.800.CHE-FSWY</h6>
-                    </div>
-                    <div class="uk-width-1-3@m newsletter">
-                        <h4>Newsletter Registration</h4>
-                        <form>
-                            <div class="uk-margin uk-width-1-2@s">
-                                <input class="uk-input" id="name" type="text" placeholder="Full Name">
-                            </div>
-
-                            <div class="uk-margin uk-width-1-2@s">
-                                <input class="uk-input" id="email" type="email" placeholder="E-mail">
-                            </div>
-                            <button class="uk-button uk-button-secondary" id="newsletter">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
-
     
-
     <footer>
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
