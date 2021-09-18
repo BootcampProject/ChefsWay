@@ -7,7 +7,7 @@ async function newFormHandler(event) {
     const table_meals = document.querySelector('textarea[name="Body"]').value;
     const directions = document.querySelector('textarea[name="Body"]').value;
   
-    const response = await fetch(`/api/recipies`, {
+    const response = await fetch(`/api/recipie`, {
       method: 'POST',
       body: JSON.stringify({
         title,

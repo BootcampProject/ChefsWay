@@ -19,7 +19,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
-router.get('/post/:id', withAuth, (req, res) => {
+router.get('/recipie/:id', withAuth, (req, res) => {
   Recipie.findByPk(req.params.id, {include: [User, {
     model: Comment,
     include: [User]
@@ -28,7 +28,7 @@ router.get('/post/:id', withAuth, (req, res) => {
       if (dbRecipie) {
         const recipie = dbRecipie.get({ plain: true });
         console.log(recipie , "<=====================");
-        res.render('single-recipies', {
+        res.render('single-recipie', {
           recipie,
           loggedIn: true
         });
@@ -51,7 +51,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       if (dbRecipie) {
         const recipie = dbRecipie.get({ plain: true });
         
-        res.render('edit-recipies', {
+        res.render('edit-recipie', {
           recipie,
           loggedIn: true
         });
@@ -64,8 +64,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
-router.get("/add-recipies", withAuth, (req, res) => {
-  res.render("add-recipies", {
+router.get("/add-recipie", withAuth, (req, res) => {
+  res.render("add-recipie", {
     layout: "dashboard"
   });
 });

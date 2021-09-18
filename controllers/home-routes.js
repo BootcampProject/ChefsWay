@@ -33,10 +33,10 @@ router.get('/', (req, res) => {
     res.render('login');
   });
 
-  router.get("/new-recipies", (req, res) => {
+  router.get("/new-recipie", (req, res) => {
     
   
-    res.render("new-recipies");
+    res.render("new-recipie");
   });
   
   module.exports = router;
