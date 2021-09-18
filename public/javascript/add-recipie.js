@@ -2,10 +2,10 @@ async function newFormHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('input[name="Title"]').value;
-    const description = document.querySelector('textarea[name="Body"]').value;
-    const ingredients = document.querySelector('textarea[name="Body"]').value;
-    const table_meals = document.querySelector('textarea[name="Body"]').value;
-    const directions = document.querySelector('textarea[name="Body"]').value;
+    const description = document.querySelector('textarea[name="recipieDescription"]').value;
+    const ingredients = document.querySelector('textarea[name="recipieIngredients"]').value;
+    const table_meals = document.querySelector('textarea[name="recipieTableMeals"]').value;
+    const directions = document.querySelector('textarea[name="recipieDirections"]').value;
   
     const response = await fetch(`/api/recipie`, {
       method: 'POST',

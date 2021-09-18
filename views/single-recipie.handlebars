@@ -2,8 +2,12 @@
 
 <h2>{{recipie.title}}</h2>
 <div>
-    Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}} Comments: {{recipie.description}}, {{recipie.ingredients}}, {{recipie.table_meals}}, {{recipie.directions}}
+    Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}} Comments: {{recipie.description}}
+    
+</div>
 
+<div>
+  {{recipie.ingredients}}, {{recipie.table_meals}}, {{recipie.directions}}
 </div>
 
 {{#if loggedIn}}
