@@ -1,4 +1,4 @@
-{{> recipie-info recipie}}
+{{!-- {{> recipie-info recipie}}
 
 <h2>{{recipie.title}}</h2>
 <div>
@@ -13,22 +13,30 @@
 </div>
 
 <div class="recipie card">
-    {{!-- <div class="card-header">
-        <h2>Edit The Recipie</h2>
-    </div>
-    <form id="edit-form" class="card-body">
-        <input name="recipie-id" value="{{post.id}}" />
-
-        <label for="recipie-title">Title</label>
-        <input type="text" name="Title" value="{{post.title}}" class="form-input" />
-
-        <label>Comments and Info</label>
-        <textarea name="Body">{{post.body}}</textarea> --}}
+  
 <form id="edit-form" class="card-body">
         <button type="submit" class="btn">Update</button>
 
-        <button type="button" id="delete-btn" class="btn">Delete</button>
     </form>
+</div> --}}
+
+<div class="uk-inline uk-margin uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center view-single-recipe">
+  {{!-- {{> recipie-info recipie}} --}}
+
+  <article class="uk-article">
+    <h1 class="uk-article-title">{{recipie.title}}</h1>
+    <p class="uk-article-meta">Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}}.</p>
+    <textarea name="Description" id="" cols="90" rows="10">{{recipie.description}} </textarea>
+    <div>
+        <br><br> <textarea name="Ingredients" id="" cols="90" rows="10">{{recipie.ingredients}}</textarea>  
+        <br><br> <textarea name="TableMeals" id="" cols="90" rows="10">{{recipie.table_meals}} </textarea>
+        <br><br> <textarea name="Directions" id="" cols="90" rows="10">{{recipie.directions}} </textarea>
+    </div>
+    <hr class="uk-divider-icon"></hr>
+  </article>
+  <form id="edit-form" class="card-body">
+        <button type="submit" class="btn uk-button uk-button-secondary">Update Recipe</button>
+  </form>
 </div>
 
 <script src="/javascript/edit-recipie.js"></script>

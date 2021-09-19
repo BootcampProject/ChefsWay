@@ -3,6 +3,7 @@ async function logout() {
       method: 'post',
       headers: { 'Content-Type': 'application/json' }
     });
+    alert("Thank you for visiting, have a good day :)")
   
     if (response.ok) {
       document.location.replace('/');

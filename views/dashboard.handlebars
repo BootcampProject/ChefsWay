@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-left">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active add-new-recipe"><a href="/new-recipie"><img src="/images/add.png" alt="Add a new recipe" width="20">Add New Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHEFSWAY</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/css/style.css">
-</head>
-
-<body class="flex-column">
-    <header>
-        <h1><a href="/dashboard">Your Dashboard</a></h1>
-    </header>
-
-    <main class="col-auto">
-        {{{body}}}
-    </main>
-
-    <footer class="flex-row justify-center">
-        <a href="/new-recipie">➕ New Recipie</a>
-    </footer>
-</body>
+<div data-uk-grid="{gutter: 20}" class="uk-grid recipe-grid">
+    <div class="uk-width-1">
+        <div class="uk-grid uk-flex-center uk-text-center">
+            {{#each recipies as |recipie|}}
+                <div class="uk-width-1-4@m card">
+                    <div class="uk-card uk-card-default uk-card-hover">
+                        <h3 class="uk-card-title">
+                            <a href="/dashboard/recipie/{{recipie.id}}">{{recipie.title}}</a>
+                        </h3>
+                        <p>{{recipie.user.username}}</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
 
 <script src="/javascript/logout.js"></script>
-
-</html>

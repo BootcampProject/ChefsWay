@@ -1,6 +1,6 @@
 async function loginFormHandler(event) {
     event.preventDefault();
-    alert("OK")
+    alert("You are now Logged in")
   
     const email = document.querySelector('#email').value.trim();
     const password = document.querySelector('#password').value.trim();

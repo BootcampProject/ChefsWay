@@ -1,4 +1,4 @@
-<form id="edit-form" class="card-body">
+{{!-- <form id="edit-form" class="card-body">
 
     <label>What is the Title of your Recipe</label>
     <input type="text" name="Title" class="form-input" />
@@ -20,5 +20,44 @@
     <button type="submit" class="btn">Add A Recipe</button>
 
 </form>
+
+<script src="/javascript/add-recipie.js"></script> --}}
+
+<div class="uk-inline uk-margin uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center add-new-recipe-form">
+    <form id="edit-form" class="card-body">
+        <fieldset class="uk-fieldset">
+
+            <h2 class="uk-legend">Lets add a new recipe!</h2>
+
+            <div class="uk-margin">
+                <label>What is the title of your recipe?</label>
+                <input class="uk-input form-input" type="text" name="Title" placeholder="Recipe Title"/>
+                {{!-- <input class="uk-input" type="text" placeholder="Input"> --}}
+            </div>
+
+            <div class="uk-margin">
+                <label>Please provide a brief description of your recipe.</label>
+                <textarea class="uk-textarea" name="recipieDescription" rows="4" placeholder="Recipe Description"></textarea>
+            </div>
+
+            <div class="uk-margin">
+                <label>What ingredients are required for this recipe?</label>
+                <textarea class="uk-textarea" name="recipieIngredients" rows="4" placeholder="Recipe Ingredients"></textarea>
+            </div>
+
+            <div class="uk-margin">
+                <label>What accompanies your recipe? List some additions for Table Meals.</label>
+                <textarea class="uk-textarea" name="recipieTableMeals" rows="4" placeholder="Table Meals"></textarea>
+            </div>
+
+            <div class="uk-margin">
+                <label>How do you make your Recipe? Please list the directions.</label>
+                <textarea class="uk-textarea" name="recipieDirections" rows="4" placeholder="Recipe Directions"></textarea>
+            </div>
+
+            <button type="submit" class="btn uk-button uk-button-secondary">Add New Recipe</button>
+        </fieldset>
+    </form>
+</div>
 
 <script src="/javascript/add-recipie.js"></script>
