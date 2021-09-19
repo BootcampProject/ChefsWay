@@ -2,8 +2,20 @@
     background-color: rgba(238, 116, 33, 0.1);
 }
 
+.hero {
+    width: 70rem;
+}
+
 .left-nav-bar {
     margin-right: 40px;
+}
+
+.add-new-recipe {
+    margin-right: 40px;
+}
+
+.add-new-recipe-form {
+    padding: 10px;
 }
 
 .hero-image {
