@@ -1,4 +1,16 @@
-# Group   Project 2 - ChefsWay
+![ChefsWay](./public/images/Homepage_Logo_extended_icon.png)
+# ChefsWay
+
+## Table of Contents
+* [Project Description](#Project-Description)
+* [User Story](#User-Story)
+* [Acceptance Criteria](#Acceptance-Criteria)
+* [Technologies Used](#Technologies-Used)
+* [Screenshot](#Screenshot)
+* [Submition Requirements](#Submition-Requirements)
+
+## Project Description
+In light of facilitating remote and COVID-19 safe activities, this project intends to allow users to create a profile whereby they are able to connect with fellow home cooks to create, edit, share and comment on recipes completely remotely.
 
 ## User Story
 * AS a HOME COOK
@@ -22,16 +34,24 @@
 * WHEN I logout
     * THEN I get confirmation that I have successfully logged out
 
-## Review
-Submition requirements for review:
+## Technologies Used
+* Dependencies include:
+    * bcrypt: ^5.0.1
+    * connect-session-sequelize: ^7.1.2
+    * dotenv: ^10.0.0
+    * express: ^4.17.1
+    * express-handlebars: ^5.3.3
+    * express-session: ^1.17.2
+    * inquirer: ^8.1.5
+    * mysql2: ^2.3.0
+    * sequelize: ^6.6.5
+* Libraries used:
+    * UIkit - https://getuikit.com/
+* Deployed via: Heroku
 
+## Screenshot
+![ChefsWay](./public/images/HomePage.png)
+
+## Submition Requirements
 * URL of the deployed application: 
 * URL of the GitHub repository: https://github.com/BootcampProject/ChefsWay.git)
-
-
-Below is an example screenshot of the application:
-![ChefsWay](./images/HomePage.png)
-
-
-
-
