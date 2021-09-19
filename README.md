@@ -22,17 +22,20 @@ In light of facilitating remote and COVID-19 safe activities, this project inten
 ## Acceptance Criteria
 * GIVEN my interest in sharing recipes
 * WHEN I land on the home page
-    * THEN I can sign-up to be a part of the community
-* WHEN I sign up
-    * THEN I then I can view all existing recipes or individual recipes
+    * THEN I can sign-up to be a part of the community or login if I have an account already
+* WHEN I sign up or login
+    * THEN I then I can view all my existing recipes or recipes shared by other users
 * WHEN I select a recipe
-    * THEN the entire recipe will appear on the page
-* WHEN I sign up for the newsletter
-    * THEN I get confirmation that I am registered
+    * THEN the entire recipe will appear on the page and I can view all existing comments and add a comment myself
 * WHEN I go to add a comment to a recipe
-    * THEN I can submit the comment & edit it if needed
+    * THEN I can submit the comment and it will appear with my username and date below
+* WHEN I click ‘My Recipes’
+    * THEN I can view all the recipes that I have created
+* WHEN I want to update a recipe
+    * THEN I can change any of the titles, description, ingredients, table meals, and directions
 * WHEN I logout
     * THEN I get confirmation that I have successfully logged out
+
 
 ## Technologies Used
 * Dependencies include:
