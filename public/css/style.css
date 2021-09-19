@@ -18,8 +18,17 @@
     padding: 10px;
 }
 
+.view-single-recipe {
+    padding: 40px;
+}
+
 .hero-image {
     padding-top: 40px;
+}
+
+.single-recipe-comments {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 
