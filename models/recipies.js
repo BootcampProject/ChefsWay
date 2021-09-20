@@ -15,6 +15,10 @@ Recipie.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    // recipeImage: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false
+    // },
     description: {
       type: DataTypes.TEXT,
       allowNull: false

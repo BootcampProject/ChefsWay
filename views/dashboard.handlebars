@@ -13,16 +13,17 @@
         <div class="uk-grid uk-flex-center uk-text-center">
             {{#each recipies as |recipie|}}
                 <div class="uk-width-1-4@m card">
-                    <div class="uk-card uk-card-default uk-card-hover">
-                        <h3 class="uk-card-title">
-                            <a href="/dashboard/recipie/{{recipie.id}}">{{recipie.title}}</a>
-                        </h3>
-                        <p>{{recipie.user.username}}</p>
+                    <div class="uk-card uk-card-large uk-card-default uk-card-hover">
+                        <a href="/dashboard/recipie/{{recipie.id}}">
+                            <div class="uk-card-media-top"><img id="card-image" src="/images/cookingpan.png" width="250px"></div>
+                            <h3 class="uk-card-title recipe-card-title">{{recipie.title}}</h3>
+                        </a>
                     </div>
                 </div>
             {{/each}}
         </div>
     </div>
 </div>
+
 
 <script src="/javascript/logout.js"></script>

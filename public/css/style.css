@@ -34,11 +34,23 @@
 
 /* RECIPE CARD ELEMENTS */
 .recipe-grid {
-    padding: 30px;
+    padding: 40px;
 }
 .card {
     padding-bottom: 20px;
 }
+#card-image{
+    padding: 15px;
+}
+
+.recipe-card-title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recipe-card-chef {
+    padding: 20px;
+}
+
 
 /* CONTACT US & NEWSLETTER ELEMENTS*/
 .contactUs {
@@ -67,18 +79,15 @@
     .welcome-message {
         font-size: 0.9rem;
     }
-    .login-title, .signup-title {
-        font-size: 0.85rem;
-    }
-    .contactUs, .newsletter {
-        margin: 30px;
-    }
 }
 
 @media screen and (max-width: 768px) {
     #ChefsWay-logo {
         content:url("/images/ChefsWay_Icon.png");
         width: 70px;
+    }
+    #navIcons {
+        width: 21px;
     }
     .all-recipes, .my-recipes, .dashboard, .logout {
         font-size: 0.2rem;
@@ -89,12 +98,6 @@
     .welcome-message {
         font-size: 0.85rem;
     }
-    .login-title, .signup-title {
-        font-size: 0.85rem;
-    }
-    .contactUs, .newsletter {
-        margin: 30px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -102,54 +105,57 @@
         content:url("/images/ChefsWay_Icon.png");
         width: 70px;
     }
+    #navIcons {
+        width: 19px;
+    }
     .all-recipes, .my-recipes, .dashboard, .logout {
         font-size: 0.6rem;
     }
     .welcome-title {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     .welcome-message {
-        font-size: 0.7rem;
-    }
-    .login-title, .signup-title {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 575px) {
     #ChefsWay-logo {
         content:url("/images/ChefsWay_Icon.png");
-        width: 70px;
+        width: 60px;
+    }
+    #navIcons {
+        width: 17px;
     }
     .welcome-box {
         margin-top: 50px;
         width: 60rem;
     }
     .welcome-title {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .welcome-message {
-        font-size: 0.7rem;
-    }
-    .login-title, .signup-title {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     #ChefsWay-logo {
         content:url("/images/ChefsWay_Icon.png");
-        width: 70px;
+        width: 40px;
+    }
+    #navIcons {
+        width: 16px;
     }
     .welcome-box {
         margin-top: 50px;
         width: 80rem
     }
     .welcome-title {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .welcome-message {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -158,6 +164,9 @@
         content:url("/images/ChefsWay_Icon.png");
         width: 60px;
     }
+    #navIcons {
+        width: 0px;
+    }
     .all-recipes, .my-recipes, .dashboard, .logout {
         font-size: 0.6rem;
     }
@@ -166,10 +175,10 @@
         width: 80rem
     }
     .welcome-title {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .welcome-message {
-        font-size: 0.55rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -183,9 +192,12 @@
         width: 90rem
     }
     .welcome-title {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     .welcome-message {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .card-image{
+        width: 150px;
     }
 }

@@ -2,12 +2,26 @@ const router = require('express').Router();
 const sequelize = require('../../config/connection');
 const { Recipie, User, Comment} = require('../../models');
 const withAuth = require ('../../utils/auth');
+// const multer = require('multer');
+
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, './uploads/');
+//   },
+//   filename: function(req, file, cb) {
+//     cb(null, new Date().toISOString() + file.originalname)
+//   }
+// });
+
+// const upload = multer({storage: storage});
+// const upload = multer({dest: 'uploads/'});
 
 
 router.post('/', withAuth, (req, res) => {
   Recipie.create({
     title: req.body.title,
     description: req.body.description,
+    // recipeImage: req.file.path,
     ingredients: req.body.ingredients,
     table_meals: req.body.table_meals,
     directions: req.body.directions,
