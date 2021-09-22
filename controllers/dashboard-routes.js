@@ -45,6 +45,7 @@ router.get('/recipie/:id', withAuth, (req, res) => {
 
 
 router.get('/edit/:id', withAuth, (req, res) => {
+  console.log("UPDATE ID", req.params)
   Recipie.findByPk(req.params.id, {
   })
     .then(dbRecipie => {

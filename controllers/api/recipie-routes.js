@@ -21,6 +21,8 @@ router.post('/', withAuth, (req, res) => {
 
 
 router.put('/:id', withAuth, (req, res) => {
+  console.log("UPDATE QUERY", req.body)
+  console.log("UPDATE QUERY", req.params)
   Recipie.update(
     {
       description: req.body.description,

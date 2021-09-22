@@ -6,7 +6,7 @@ async function editFormHandler(event) {
     const ingredients = document.querySelector('textarea[name="Ingredients"]').value.trim();
     const table_meals = document.querySelector('textarea[name="TableMeals"]').value.trim();
     const directions = document.querySelector('textarea[name="Directions"]').value.trim();
-    const id = window.location.toString().slice(-1)
+    const id = window.location.toString().split('/').pop();
     console.log(description);
     const response = await fetch(`/api/recipie/${id}`, {
       method: 'PUT',
