@@ -3,6 +3,7 @@
 
   <article class="uk-article">
     <h1 class="uk-article-title">{{recipie.title}}</h1>
+    <a href="/dashboard/edit/{{recipie.id}}">Edit Recipe</a>
     <p class="uk-article-meta">Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}}.</p>
     <p class="uk-text-lead">{{recipie.description}}</p>
     <p>{{recipie.ingredients}}</p>
