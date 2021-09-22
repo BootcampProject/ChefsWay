@@ -1,0 +1,28 @@
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-left">
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active add-new-recipe"><a href="/new-recipie"><img src="/images/add.png" alt="Add a new recipe" width="20">Add New Recipe</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div data-uk-grid="{gutter: 20}" class="uk-grid recipe-grid">
+    <div class="uk-width-1">
+        <div class="uk-grid uk-flex-center uk-text-center">
+            {{#each recipies as |recipie|}}
+                <div class="uk-width-1-4@m card">
+                    <div class="uk-card uk-card-large uk-card-default uk-card-hover">
+                        <a href="/dashboard/recipie/{{recipie.id}}">
+                            <div class="uk-card-media-top"><img id="card-image" src="/images/cookingpan.png" width="250px"></div>
+                            <h3 class="uk-card-title recipe-card-title">{{recipie.title}}</h3>
+                        </a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<script src="/javascript/logout.js"></script>

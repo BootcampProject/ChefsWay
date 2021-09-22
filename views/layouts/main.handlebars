@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEFSWAY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container-wrap background">
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/"><img id="ChefsWay-logo"
+                        src="/images/Homepage_Logo_extended_icon.png" alt="ChefsWay Home Button" width="270"></a>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav left-nav-bar">
+                        <li class="uk-active"><a href="/dashboard"><img src="/images/myrecipes.png" alt="My Recipes"
+                                    width="30">My Recipes</a></li>
+                        <li class="uk-active"><a href="/login"><img src="/images/login.png" alt="Login"
+                                    width="30">Login</a></li>
+                        <li class="uk-active"><a href="/login"><img src="/images/signup.png" alt="Sign up"
+                                    width="30">Sign Up</a></li>
+                        <li class="uk-active logout"><a href="#" id="logout"><img src="/images/logout.png" alt="Log out"
+                                    width="25">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="uk-inline uk-margin uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center hero-image">
+            <img class="hero" src="/images/Hero-Landing.jpg" alt="Welcome to ChefsWay" uk-cover>
+            <div class="uk-width-1-3 uk-position-medium uk-position-center uk-overlay uk-overlay-default welcome-box">
+                <h3 class="uk-title welcome-title">Thanksgiving is just around the corner!</h3>
+                <p class="welcome-message">Looking to make something for the family? Look no further!
+                    <br>
+                    We have everything from starters to mains! Don't forget to share your own 'secret recipes'.
+                </p>
+            </div>
+        </div>
+
+        {{{ body }}}
+
+        <hr class="uk-divider-icon">
+        </hr>
+
+        <footer>
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#"><img id="ChefsWay-logo" src="/images/ChefsWay_Icon.png"
+                            alt="ChefsWay Home Button" width="100"></a>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav left-nav-bar">
+                                <li class="uk-active">
+                                    <div>
+                                        Contact Us
+                                        <div class="uk-navbar-subtitle">Email: chefsway@aol.com</div>
+                                        <div class="uk-navbar-subtitle">Office: 1.800.CHE-FSWY</div>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </div>
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    <script src="/javascript/comment.js"></script>
+    {{/if}}
+</body>
+
+</html>

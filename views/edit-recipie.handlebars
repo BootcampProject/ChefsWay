@@ -1,0 +1,18 @@
+<div class="uk-inline uk-margin uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-center view-single-recipe">
+
+  <article class="uk-article">
+    <h1 class="uk-article-title">{{recipie.title}}</h1>
+    <p class="uk-article-meta">Posted by {{recipie.user.username}} on {{format_date recipie.createdAt}}.</p>
+    <textarea name="Description" id="" cols="90" rows="10">{{recipie.description}} </textarea>
+    <div>
+        <br><br> <textarea name="Ingredients" id="" cols="90" rows="10">{{recipie.ingredients}}</textarea>  
+        <br><br> <textarea name="TableMeals" id="" cols="90" rows="10">{{recipie.table_meals}} </textarea>
+        <br><br> <textarea name="Directions" id="" cols="90" rows="10">{{recipie.directions}} </textarea>
+    </div>
+    <form id="edit-form" class="card-body">
+        <button type="submit" class="btn uk-button uk-button-secondary">Update Recipe</button>
+    </form>
+  </article>
+</div>
+
+<script src="/javascript/edit-recipie.js"></script>
