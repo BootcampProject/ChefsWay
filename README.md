@@ -53,5 +53,5 @@ In light of facilitating remote and COVID-19 safe activities, this project inten
 ![ChefsWay](./public/images/HomePage.png)
 
 ## Submition Requirements
-* URL of the deployed application: 
+* URL of the deployed application: https://chefsway.herokuapp.com/
 * URL of the GitHub repository: https://github.com/BootcampProject/ChefsWay.git)
